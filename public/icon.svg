@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <!-- Soft Blue Gradient Background similar to the image -->
+    <linearGradient id="bg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#93C5FD"/> <!-- Blue 300 -->
+      <stop offset="100%" stop-color="#60A5FA"/> <!-- Blue 400 -->
+    </linearGradient>
+  </defs>
+  
+  <!-- Rounded Container -->
+  <rect width="512" height="512" rx="110" fill="url(#bg)" stroke="#BAE6FD" stroke-width="12"/>
+  
+  <!-- Internal Grid Lines (Soft transparent white) -->
+  <path d="M170 30 L170 482" stroke="rgba(255,255,255,0.4)" stroke-width="6"/>
+  <path d="M342 30 L342 482" stroke="rgba(255,255,255,0.4)" stroke-width="6"/>
+  <path d="M30 170 L482 170" stroke="rgba(255,255,255,0.4)" stroke-width="6"/>
+  <path d="M30 342 L482 342" stroke="rgba(255,255,255,0.4)" stroke-width="6"/>
+  
+  <!-- Text and Dots Styling -->
+  <style>
+    .text { 
+      fill: white; 
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; 
+      font-weight: 800; 
+      font-size: 110px; 
+      text-anchor: middle; 
+      dominant-baseline: central; 
+    }
+    .dot { 
+      fill: rgba(255,255,255,0.35); 
+    }
+  </style>
+
+  <!-- Grid Content based on the image provided:
+       S  U  .
+       .  D  O
+       K  U  . 
+  -->
+
+  <!-- Row 1 -->
+  <text x="85" y="95" class="text">S</text>
+  <text x="256" y="95" class="text">U</text>
+  <circle cx="427" cy="85" r="35" class="dot"/>
+
+  <!-- Row 2 -->
+  <circle cx="85" cy="256" r="35" class="dot"/>
+  <text x="256" y="266" class="text">D</text>
+  <text x="427" y="266" class="text">O</text>
+
+  <!-- Row 3 -->
+  <text x="85" y="437" class="text">K</text>
+  <text x="256" y="437" class="text">U</text>
+  <circle cx="427" cy="427" r="35" class="dot"/>
+</svg>
