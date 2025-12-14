@@ -95,20 +95,6 @@
     <!-- Entry point for Vite -->
     <script type="module" src="/index.tsx"></script>
     
-    <script>
-      if ('serviceWorker' in navigator) {
-        window.addEventListener('load', () => {
-          // Important: With Vite build, sw.js needs to be in public folder or handled manually.
-          // For this setup, ensure sw.js is available at root.
-          navigator.serviceWorker.register('/sw.js')
-            .then(registration => {
-              console.log('SW registered');
-            })
-            .catch(err => {
-              console.log('SW failed', err);
-            });
-        });
-      }
-    </script>
+
   </body>
 </html>
